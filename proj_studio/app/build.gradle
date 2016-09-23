@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        applicationId "com.work.teacher"
+        minSdkVersion 10
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/afinal_0.5.1_bin.jar')
+    compile 'com.android.support:support-v4:23.1.1'
+    compile files('libs/android-json-V1.jar')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.github.zzz40500:android-shapeLoadingView:1.0.3.2'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile files('libs/GifView.jar')
+}

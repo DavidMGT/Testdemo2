@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegrey"
+    tools:context="com.work.teacher.WorkActivity">
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45dp">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingBottom="45dp">
+            <!-- 该页面布局-->
+            <TextView
+                android:id="@+id/tv_noscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="还没有添加题目"
+                android:textColor="@color/blackgrey"
+                android:textSize="@dimen/px_22"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lv_scores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/whitegrey"
+                android:dividerHeight="2dp"></ListView>
+        </FrameLayout>
+
+        <include layout="@layout/layout_net" />
+
+        <Button
+            android:id="@+id/commit_score"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="确 认"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_22" />
+    </FrameLayout>
+
+</RelativeLayout>

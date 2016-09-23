@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegrey"
+    tools:context="com.work.teacher.WorkActivity" >
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45dp" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:id="@+id/details_sweep_class"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/details_sweep_code_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="加入码：786545"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_20"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/details_id_class"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="班级    ID：DFHKDSHJ"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_24" />
+
+                <TextView
+                    android:id="@+id/details_date_class"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="创建时间：2016-02-12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_24" />
+
+                <TextView
+                    android:id="@+id/details_synopsis_class"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="简介：hd声卡回复的回复肯定是非健康独守空房sadsadsadsadsa"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_24" />
+				<TextView 
+                        android:id="@+id/teaclass_nodata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="该班级还没有人加入"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:visibility="gone"
+                        />
+                <ListView
+                    android:id="@+id/teaclass_details"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/whitegrey"
+                    android:dividerHeight="1dp" >
+                </ListView>
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/layout_net" />
+    </FrameLayout>
+
+</RelativeLayout>

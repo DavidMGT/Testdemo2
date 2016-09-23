@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegrey" >
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_update_paessword"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <EditText
+                    android:id="@+id/oldpwd_updatepwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="请输入原密码"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_28" />
+
+                <EditText
+                    android:id="@+id/newpwd_updatepwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:hint="请输入新密码"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_28" />
+
+                <EditText
+                    android:id="@+id/twopwd_updatepwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/white"
+                    android:hint="请再输入新密码"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_28" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_update_mobile"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/newmobile_updatemonile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="请输入新手机号码"
+                    android:padding="10dp"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_28" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp" >
+
+                    <EditText
+                        android:id="@+id/verfiy_updatemonile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="请输入验证码"
+                        android:padding="10dp"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_28" />
+
+                    <Button
+                        android:id="@+id/getverfiy_updatemobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:text="点击获取"
+                        android:textColor="@color/weakgrey"
+                        android:textSize="@dimen/px_28" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_net" />
+    </FrameLayout>
+
+</RelativeLayout>

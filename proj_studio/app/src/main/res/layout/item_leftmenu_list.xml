@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whitegreen"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_leftmenu"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/whitegreen"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/select_leftmenu"
+            android:layout_width="15dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/select_lefttree" />
+
+        <LinearLayout
+            android:id="@+id/ll_childleftmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/child_leftmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/spinner_donw"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/name_lefttree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="七年级"
+                android:textColor="@color/white"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="@dimen/px_30" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

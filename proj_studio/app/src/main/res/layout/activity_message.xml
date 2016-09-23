@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegrey"
+    tools:context="com.work.teacher.MessageActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/msg_message"
+                style="@style/bt_header_title"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/message_top_yes"
+                android:padding="5dp"
+                android:text="消 息" />
+
+            <Button
+                android:id="@+id/course_message"
+                style="@style/bt_header_title"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/class_project_no"
+                android:padding="5dp"
+                android:text="课 程" />
+
+            <Button
+                android:id="@+id/study_message"
+                style="@style/bt_header_title"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/studey_no"
+                android:padding="5dp"
+                android:text="互 学" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/add_message" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="55dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpage_message"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></android.support.v4.view.ViewPager>
+        </LinearLayout>
+
+        <include layout="@layout/layout_net" />
+    </FrameLayout>
+
+</RelativeLayout>

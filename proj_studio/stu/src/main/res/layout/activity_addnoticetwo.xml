@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegrey"
+    tools:context="com.work.teacher.WorkActivity" >
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45dp" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/add_notice_two" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="班级列表"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_24" />
+
+                <ListView
+                    android:id="@+id/class_notice_lists"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:divider="@color/whitegrey"
+                    android:dividerHeight="1dp" >
+                </ListView>
+
+                <FrameLayout
+                    android:id="@+id/fl_state_notice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="定时发送:"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" />
+
+                    <TextView
+                        android:id="@+id/tv_state_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:text="暂无"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:src="@drawable/easyicon" />
+                </FrameLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/layout_net" />
+    </FrameLayout>
+
+</RelativeLayout>

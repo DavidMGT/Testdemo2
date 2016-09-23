@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegrey"
+    tools:context="com.work.teacher.WorkActivity" >
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 已经绑定的学校 -->
+
+            <LinearLayout
+                android:id="@+id/ll_update_school"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/name_school"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="学校名称："
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_24" />
+
+                        <TextView
+                            android:id="@+id/code_school"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="学校编号："
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_24" />
+
+                        <TextView
+                            android:id="@+id/permission_school"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="用户权限：已激活-全部权限"
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_24" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/update_school"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:text="更改绑定"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/px_24" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/verson_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="当前软件版本：免费版 v1.0"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="为了你更好的体验本产品,建议立马升级为完整版"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_20" />
+            </LinearLayout>
+
+            <!-- 修改绑定 -->
+
+            <LinearLayout
+                android:id="@+id/ll_add_school"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" >
+
+                    <EditText
+                        android:id="@+id/update_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="28px" />
+
+                    <ImageView
+                        android:id="@+id/update_name_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/cancel" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="请输入正确的学校编号"
+                    android:textSize="@dimen/px_22" />
+            </LinearLayout>
+
+            <!-- 绑定成功、失败 -->
+
+            <LinearLayout
+                android:id="@+id/fail_sucess_school"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="40dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_fail_sucess"
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tv_fail_sucess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text=""
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_24" />
+
+                <TextView
+                    android:id="@+id/name_sucess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_24" />
+
+                <TextView
+                    android:id="@+id/code_sucess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text=""
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_24" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/date_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" />
+
+                    <Button
+                        android:id="@+id/cloes_sucess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="直接关闭"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/px_24" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_net" />
+    </FrameLayout>
+
+</RelativeLayout>

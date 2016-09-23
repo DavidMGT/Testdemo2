@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_more_item"
+    android:padding="10dp"
+    >
+    <ImageView 
+        android:id="@+id/more_list_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/tiny_icon"
+        />
+	<TextView 
+	    android:id="@+id/more_list_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="微课"
+	    android:textSize="@dimen/px_30"
+	    android:textColor="@color/blackgrey"
+	    android:layout_toRightOf="@id/more_list_image"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="10dp"
+	    />
+	<ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/easyicon"
+	    android:layout_centerVertical="true"
+	    android:layout_alignParentRight="true"
+	    
+	    />
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/class_notice_items"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/select_pay_yes" />
+
+    <TextView
+        android:id="@+id/classname_notice_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/class_notice_items"
+        android:text="高一十四班 (优)"
+        android:textColor="@color/blackgrey"
+        android:textSize="@dimen/px_20" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal" 
+        android:gravity="right"
+        >
+
+        <TextView
+            android:id="@+id/classnum_notice_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="教师1/3 学生2/4 家长3/4"
+            android:textColor="@color/blackgrey"
+            android:textSize="@dimen/px_20" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/classnum_notice_items"
+            android:src="@drawable/easyicon" />
+    </LinearLayout>
+
+</RelativeLayout>

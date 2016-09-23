@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_answer_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70"
+        android:layout_below="@id/header"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x10"
+        android:paddingRight="@dimen/x10">
+
+        <TextView
+            android:id="@+id/tv_numbers"
+            style="@style/text_style2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/4" />
+
+        <TextView
+            android:id="@+id/tv_answer_station"
+            style="@style/text_style2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="答题情况 >" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_commit"
+        style="@style/textview_color_white_size16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:text="提交"
+        android:visibility="invisible" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_answers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bt_commit"
+        android:layout_below="@id/rl_answer_header"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@color/white"></android.support.v4.view.ViewPager>
+</RelativeLayout>

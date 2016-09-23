@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/whitegrey"
+    >
+    
+    
+    <include layout="@layout/top"/>
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" 
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="反馈类型"
+                android:textSize="@dimen/px_24"
+                android:layout_margin="10dp"
+                />
+            <RelativeLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                >
+                <Button 
+	                android:id="@+id/error_feedback"
+	                android:layout_width="90dp"
+	                android:layout_height="wrap_content"
+	                android:text="题目报错"
+	                android:textSize="@dimen/px_24"
+	                android:textColor="@color/green"
+	                android:background="@drawable/shape_feedback_select"
+	                android:padding="10dp"
+	                />
+                <Button 
+	                android:id="@+id/problem_feedback"
+	                android:layout_width="90dp"
+	                android:layout_height="wrap_content"
+	                android:text=" 问 题  "
+	                android:textSize="@dimen/px_24"
+	                android:textColor="@color/weakgrey"
+	                android:background="@drawable/shape_feedback_noselect"
+	                android:padding="10dp"
+	                android:layout_centerInParent="true"
+	                />
+                <Button 
+	                android:id="@+id/idea_feedback"
+	                android:layout_width="90dp"
+	                android:layout_height="wrap_content"
+	                android:text=" 意 见  "
+	                android:textSize="@dimen/px_24"
+	                android:textColor="@color/weakgrey"
+	                android:background="@drawable/shape_feedback_noselect"
+	                android:padding="10dp"
+	                android:layout_alignParentRight="true"
+	                />
+            </RelativeLayout>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="问题描述"
+                android:textSize="@dimen/px_24"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+            <EditText 
+                android:id="@+id/depict_feedback"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="10dp"
+                android:lines="4"
+                android:gravity="top"
+                />
+        </LinearLayout>
+        <include layout="@layout/layout_net" />
+        <Button 
+            android:id="@+id/feedback"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textSize="@dimen/px_28"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_gravity="bottom"
+            />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y150"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/x20">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_notice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="星期五早上九点开家长会，请准时到场"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_notice_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="06-19" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_notice_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/y10"
+            android:singleLine="true"
+            android:text="简介：对这节课有什么看法对者即可有什么看书顶顶顶顶顶顶顶顶顶顶顶顶" />
+
+        <View
+            android:id="@+id/v_dot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/drawable_circle_red_bg" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_notice_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发布人：" />
+</LinearLayout>

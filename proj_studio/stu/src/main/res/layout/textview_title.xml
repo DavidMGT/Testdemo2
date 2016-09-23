@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:background="@color/gray1" />
+
+
+    <TextView
+        android:id="@+id/tv_question_name"
+        style="@style/text_style1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:text="1：那个老师的课最有意思" />
+</RelativeLayout>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegrey"
+    tools:context="com.work.teacher.WorkActivity">
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45dp">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <!-- 该页面布局-->
+            <include layout="@layout/item_type_mode" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="45dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="章节"
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_22" />
+
+                        <Button
+                            android:id="@+id/section_editoranswer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="10dp"
+                            android:gravity="left"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_22" />
+
+
+                        <LinearLayout
+                            android:id="@+id/show_recode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/white"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="录音"
+                                    android:textColor="@color/blackgrey"
+                                    android:textSize="@dimen/px_22" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/click_recorde"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/record_editoranswer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:background="@null"
+                                    android:text="开始 说话"
+                                    android:textColor="@color/blackgrey"
+                                    android:textSize="@dimen/px_22" />
+                                <ImageView
+                                    android:id="@+id/iv_record_gif"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:enabled="false"
+                                    android:visibility="visible"
+                                    android:src="@drawable/record_finish"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="题干"
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_22" />
+
+                        <EditText
+                            android:id="@+id/body_editoranswer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:hint="请输入"
+                            android:inputType="textMultiLine"
+                            android:lines="5"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_22" />
+
+                        <ImageView
+                            android:id="@+id/iv_body_editoranswer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+
+
+                        <Button
+                            android:id="@+id/add_image_editoranswer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="left"
+                            android:padding="10dp"
+                            android:text="添加图片  +"
+                            android:textColor="@color/blackgrey" />
+
+                        <LinearLayout
+                            android:id="@+id/choice_answer_editoranswer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="选项"
+                                    android:textColor="@color/blackgrey"
+                                    android:textSize="@dimen/px_22" />
+
+                                <Button
+                                    android:id="@+id/add_choice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:background="@null"
+                                    android:text="添加选择"
+                                    android:textColor="@color/green"
+                                    android:textSize="@dimen/px_22" />
+                            </FrameLayout>
+
+                            <com.work.teacher.view.SwipeListView
+                                android:id="@+id/choice_lists"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:divider="@color/whitegrey"
+                                android:dividerHeight="1dp"></com.work.teacher.view.SwipeListView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pack_answer_editoranswer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="答案"
+                                android:textColor="@color/blackgrey"
+                                android:textSize="@dimen/px_22" />
+
+                            <EditText
+                                android:id="@+id/pack_editoranswer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:gravity="top"
+                                android:hint="请输入"
+                                android:lines="5"
+                                android:paddingLeft="20dp"
+                                android:paddingTop="5dp"
+                                android:textColor="@color/blackgrey"
+                                android:textSize="@dimen/px_22" />
+
+                            <ImageView
+                                android:id="@+id/iv_pack_editoranswer"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                        <Button
+                            android:id="@+id/bunanswer_image_editoranswer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="left"
+                            android:padding="10dp"
+                            android:text="添加图片  +"
+                            android:textColor="@color/blackgrey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="解析"
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_22" />
+
+                        <EditText
+                            android:id="@+id/exapin_editoranswer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="top"
+                            android:hint="请输入"
+                            android:lines="5"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="5dp"
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_22" />
+
+                        <ImageView
+                            android:id="@+id/iv_exapin_editoranswer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+                        <Button
+                            android:id="@+id/bunexapin_image_editoranswer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="left"
+                            android:padding="10dp"
+                            android:text="添加图片  +"
+                            android:textColor="@color/blackgrey" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/del_editoranswer"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/red"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="删除"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px_24" />
+
+                    <Button
+                        android:id="@+id/commit_editoranswer"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/green"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="确定"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px_24" />
+                </LinearLayout>
+
+                <include layout="@layout/item_type_mode_lists" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <include layout="@layout/layout_net" />
+
+
+    </FrameLayout>
+
+</RelativeLayout>

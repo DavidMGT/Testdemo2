@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    tools:context="com.work.student.homework.FeedBackActivity">
+
+    <TextView
+        android:id="@+id/tv_cuowu"
+        style="@style/text_color_gray_size14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray1"
+        android:padding="@dimen/x8"
+        android:text="错误类型" />
+
+    <GridView
+        android:id="@+id/gv_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cuowu"
+        android:background="@color/white"
+        android:horizontalSpacing="@dimen/x100"
+        android:numColumns="3"
+        android:padding="@dimen/x10"></GridView>
+
+    <TextView
+        android:id="@+id/tv_cuowu_des"
+        style="@style/text_color_gray_size14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gv_type"
+        android:background="@color/gray1"
+        android:padding="@dimen/x8"
+        android:text="错误类型" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200"
+        android:layout_below="@id/tv_cuowu_des"
+        android:gravity="start"
+        android:hint="请输入" />
+
+    <Button
+        android:id="@+id/bt_commit"
+        style="@style/textview_color_white_size16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        android:text="提交" />
+</RelativeLayout>

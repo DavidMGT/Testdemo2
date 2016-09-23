@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegrey"
+    android:orientation="vertical">
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/item_type_mode" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="55dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/search_questionwork"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="10dp"
+                        android:background="@color/whitegrey"
+                        android:hint="搜索"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_22" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingRight="10dp"
+                        >
+
+                        <Button
+                            android:id="@+id/btn_secrch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/green"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text=" 搜 索 "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/px_22" />
+                        <Button
+                            android:id="@+id/btn_addques"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/green"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text=" 添 加 "
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="1dp"
+                            android:visibility="gone"
+                            android:textSize="@dimen/px_22" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/question_lists_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="100dp"
+                    android:text="该添加下没有题目"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/px_24"
+                    android:visibility="gone" />
+
+                <com.work.teacher.view.CustomListView
+                    android:id="@+id/question_lists"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:divider="@color/whitegrey"
+                    android:dividerHeight="10dp"
+                    android:fastScrollEnabled="true"
+                    android:focusableInTouchMode="true"
+                    android:scrollbars="none" />
+
+
+                <include layout="@layout/item_type_mode_lists" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_net" />
+
+        <ImageView
+            android:id="@+id/left_menu_questionwork"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/work_left_menu"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

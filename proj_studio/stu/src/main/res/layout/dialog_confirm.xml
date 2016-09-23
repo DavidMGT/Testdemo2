@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_circle20_white_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y200"
+        android:gravity="center"
+        android:text="您还有题目未完成，\n确定要交卷吗"
+        android:textColor="@color/tv_gray"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_below="@id/tv"
+        android:background="@color/tv_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y96"
+        android:layout_below="@id/line"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_cancle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_circle20_white_bg"
+            android:text="取消"
+            android:textColor="@color/red" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="match_parent"
+            android:background="@color/black"></View>
+
+        <Button
+            android:id="@+id/bt_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/drawable_circle20_white_bg"
+            android:text="确定"
+            android:textColor="@color/tv_gray" />
+    </LinearLayout>
+</RelativeLayout>

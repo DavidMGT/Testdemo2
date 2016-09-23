@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.work.student"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <!-- 查看 Wi-Fi 状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 录音 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 控制振动器 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 防止设备休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ManageAppliaction"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:theme="@android:style/Theme.Black.NoTitleBar">
+
+        <!-- 启动页面 -->
+        <activity
+            android:name=".LaunchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 登陆页面 -->
+        <activity android:name=".LoginActivity" />
+        <!-- 首页界面 -->
+        <activity android:name=".HomeActivity" />
+        <!-- 消息 -->
+        <activity android:name=".MessageActivity" />
+        <!-- 作业 -->
+        <activity android:name=".WorkActivity" />
+        <!-- 班级 -->
+        <activity android:name=".TeaClassActivity" />
+        <!-- 更多 -->
+        <activity android:name=".MoreActivity" />
+        <!-- 注册 -->
+        <activity android:name=".RegisterActivity" />
+        <!-- 忘记密码 -->
+        <activity android:name=".ForgetActivity" />
+        <!-- 反馈 -->
+        <activity android:name=".more.FeedBackActivity" />
+        <!-- 个人设置 -->
+        <activity android:name=".more.PersonalSettingsActivity" />
+        <!-- 系统设置 -->
+        <activity android:name=".more.SettingActivity" />
+        <!-- 修改姓名 -->
+        <activity android:name=".more.UpdateNameActivity" />
+        <!-- 修改科目年级 -->
+        <activity android:name=".more.SubjectActivity" />
+        <!-- 绑定学校 -->
+        <activity android:name=".more.SchoolActivity" />
+        <!-- 账号安全 -->
+        <activity android:name=".more.SafetyActivity" />
+        <!-- 修改密码 、手机号码 -->
+        <activity android:name=".more.UpdatePwdActivity" />
+        <!-- 我的钱包 -->
+        <activity android:name=".more.MoneyActivity" />
+        <!-- 充值，提现，收益统计，提现记录，我的账户 -->
+        <activity android:name=".more.MoneyAccountActivity" />
+        <!-- 通知 -->
+        <activity android:name=".more.notice.NoticeActivity" />
+        <!-- 通知详情 -->
+        <activity android:name=".more.notice.NoticeDetailsActivity" />
+        <!-- 发布通知第一步 -->
+        <activity android:name=".more.notice.AddNoticeOneActivity" />
+        <!-- 发布通知第二步 -->
+        <activity android:name=".more.notice.AddNoticeTwoActivity" />
+        <!-- 发布通知》》学生、家长、老师选择 -->
+        <activity android:name=".more.notice.NoticeAmountActivity" />
+        <!-- 发布通知》》定时发送 -->
+        <activity android:name=".more.notice.StateActivit" />
+
+        <!-- 班级》》创建班级 -->
+        <activity android:name=".team.CreateClassActivity" />
+        <!-- 班级》》加入班级 -->
+        <activity android:name=".team.AddClassActivity" />
+        <!-- 班级》》班级历史 -->
+        <activity android:name=".team.ClassHistoryActivity" />
+        <!-- 班级》》班级详情 -->
+        <activity android:name=".team.TeaClassDetailsActivity" />
+
+        <!-- 监测网络是否发生变化 -->
+        <receiver android:name=".receiver.NetBroadCastReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- 监测服务》》通知定时发布 -->
+        <service android:name=".service.NoticeService" />
+
+        <activity android:name=".SubMessageActivity" />
+        <activity android:name=".view.NoticeDetailActivity" />
+        <activity android:name=".view.QuestionNaireActivity" />
+        <activity android:name=".homework.HomeWorkActivity" />
+
+        <service
+            android:name=".service.UpdateService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".homework.FeedBackActivity" />
+        <activity
+            android:name=".homework.AnswerSheetActivity"
+            android:label="@string/title_activity_answer_sheet" />
+        <activity android:name=".homework.AnswerdSheetActivity"></activity>
+    </application>
+
+</manifest>

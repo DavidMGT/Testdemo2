@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="E:\work\Teacher\proj_studio\stu\libs\android-json-V1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="95a736fc113a91281f4ae1976b4e594c29b301db">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\2\android-json-V1_375efcd46b32248271ca82c1a50127d84c004351\classes.dex" />
+    </item>
+    <item
+        jar="E:\work\Teacher\proj_studio\stu\libs\ormlite-core-5.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="03382b8260646dd334a1b9c1b3d412fcb73d8b21">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\2\ormlite-core-5.0_60176a8770267896fea09c15f546380f2eec1d62\classes.dex" />
+    </item>
+    <item
+        jar="E:\work\Teacher\proj_studio\stu\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.1.1_83c66a36ea3f98c40247b54a8935583f6015fdaa\classes.dex" />
+    </item>
+    <item
+        jar="E:\work\Teacher\proj_studio\stu\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.1.1_defe3f669f0203fd413a2967e0e0848aa8d3a341\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\maguitao\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.0.0\ddd99896e9569eaababbe81b35d80e1b91c4ad85\eventbus-3.0.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\10\eventbus-3.0.0_84f854a9710545a28e685743896762afa1492a04\classes.dex" />
+    </item>
+    <item
+        jar="E:\work\Teacher\proj_studio\stu\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.1.1_aab3cde3eb283d4684269bd98ec7ffd5a5764dd7\classes.dex" />
+    </item>
+    <item
+        jar="E:\work\Teacher\proj_studio\stu\libs\commons-collections-3.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="40fb048097caeacdb11dbb33b5755854d89efdeb">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\2\commons-collections-3.1_5b8d9da8b27b9316907caaba94411846ef41d5ed\classes.dex" />
+    </item>
+    <item
+        jar="E:\work\Teacher\proj_studio\stu\libs\ormlite-android-5.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="01f065373aeef355dd9e2fd9854efd5ed4d54f6d">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\2\ormlite-android-5.0_95ecdc8eaf0c4b731da0aecaef6b4da0eda79dc7\classes.dex" />
+    </item>
+    <item
+        jar="E:\work\Teacher\proj_studio\stu\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_1355a4af1ad1eb65d202081a6c9e920f8f203427\classes.dex" />
+    </item>
+    <item
+        jar="E:\work\Teacher\proj_studio\stu\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="6a87f08c646308a0eaeaa9e446e29848194b203f">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_a2727453236e6cddf22da4c44d3e9e13ee853959\classes.dex" />
+    </item>
+    <item
+        jar="E:\work\Teacher\proj_studio\stu\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="1f01b942331f1a692632d47b5ef1932f261e4402">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_5527b5e64dc863d12208538b7108e078abb4d34a\classes.dex" />
+    </item>
+    <item
+        jar="E:\SDK\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.1.1_2d8b48096e1da4c96bb56725af3580061fb9bde9\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\maguitao\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_f6bce2ac432dcba72b271c0c55f40d5947e7edb9\classes.dex" />
+    </item>
+    <item
+        jar="E:\work\Teacher\proj_studio\stu\build\intermediates\exploded-aar\com.github.zzz40500\android-shapeLoadingView\1.0.3.2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="0cc1eadbbbd59d1ac49015550ce8e11e2dff5eff">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.zzz40500-android-shapeLoadingView-1.0.3.2_49e77cbd0a21ead0ff3ab0e0c1706aba5734405b\classes.dex" />
+    </item>
+    <item
+        jar="E:\work\Teacher\proj_studio\stu\libs\afinal_0.5.1_bin.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="ae398c74701392473b9cb488c76a92576d6f548c">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\2\afinal_0.5.1_bin_74455f9d3d61f67bc6563722f45238dacc5d2096\classes.dex" />
+    </item>
+    <item
+        jar="E:\work\Teacher\proj_studio\stu\libs\Rong_IMKit_v2_5_0.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="ea69efa37027fcb068cecf716e5cd457eba7d845">
+        <dex dex="E:\work\Teacher\proj_studio\stu\build\intermediates\transforms\dex\debug\folders\1000\2\Rong_IMKit_v2_5_0_b66b01bf464ab5ad36571750ebca990fb3dd6e5f\classes.dex" />
+    </item>
+
+</items>

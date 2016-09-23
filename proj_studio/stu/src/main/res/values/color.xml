@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="whitegrey">#F1F1F1</color>
+    <color name="whiteyellow">#FFF9BB</color>
+    <color name="scralwtop">#19D3FF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#2C96DA</color>
+    <color name="lightgrey">#DFDFDF</color>
+    <color name="blackgrey">#878787</color>
+    <color name="weakgrey">#CBCBCB</color>
+    <color name="green">#4AC4BC</color>
+    <color name="turquoise">#2BF230</color>
+    <color name="red">#FF5A5A</color>
+    <color name="transparent">#4000</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <color name="common_black">#000000</color>
+    <color name="gray1">#FFF1F1F1</color>
+    <color name="tv_gray">#FF787878</color>
+</resources>

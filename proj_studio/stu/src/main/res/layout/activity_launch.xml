@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.work.teacher.LaunchActivity" 
+    android:background="@color/white"
+    >
+	<android.support.v4.view.ViewPager    
+        android:id="@+id/viewpage_launch"    
+        android:layout_width="fill_parent"    
+        android:layout_height="wrap_content" />
+	<RelativeLayout    
+        android:layout_width="fill_parent"    
+        android:layout_height="fill_parent"   
+        android:orientation="vertical" >  
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+	        <LinearLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            android:gravity="right"
+	            >
+	            <TextView 
+	                android:id="@+id/time_launch"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/launch_time"
+	                android:text="10 秒之后跳过"
+	                android:textSize="24px"
+	                android:textColor="@color/white"
+	                android:padding="10dp"
+	                android:layout_marginTop="5dp"
+	                android:layout_marginRight="5dp"
+	                android:visibility="gone"
+	                />
+	        </LinearLayout> 
+	        <RelativeLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="0dp"
+	            android:layout_weight="1"
+	            >
+	            <LinearLayout 
+	                android:id="@+id/rel"
+	                android:layout_width="fill_parent"
+	                android:layout_height="40dp"
+	                android:layout_centerInParent="true"
+	                android:orientation="horizontal"
+	                >
+	            </LinearLayout>
+	            <LinearLayout    
+		            android:id="@+id/viewgroup_launch"    
+		            android:layout_width="fill_parent"    
+		            android:layout_height="wrap_content"    
+		            android:layout_marginTop="30dp"  
+		            android:layout_below="@id/rel"
+		            android:gravity="center_horizontal"    
+		            android:orientation="horizontal" >    
+		        </LinearLayout> 
+		         <LinearLayout 
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal"
+	                android:gravity="center_horizontal"
+	                android:layout_above="@id/rel"
+	                >
+	                 <Button 
+	                    android:id="@+id/launchtologin"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="马 上 体 验"
+	                    android:background="@drawable/main_c"
+	                    android:textColor="@color/white"
+	                    android:textSize="30px"
+	                    android:visibility="gone"
+	                    />
+	            </LinearLayout>  
+	        </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+       
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backguand"
+    android:orientation="vertical"
+    tools:context="com.work.teacher.LoginActivity" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="bottom"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:src="@drawable/logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="5"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/name_reg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="请输入用户名"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/whitegrey" />
+
+                <EditText
+                    android:id="@+id/pwd_reg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/whitegrey" />
+
+                <EditText
+                    android:id="@+id/pwd_two"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="请再输入密码"
+                    android:inputType="textPassword"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/whitegrey" />
+
+                <EditText
+                    android:id="@+id/tel_reg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:hint="请输入手机"
+                    android:inputType="number"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/whitegrey" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp" >
+
+                    <EditText
+                        android:id="@+id/name_verfiy"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="请输入验证码"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="50dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="28px" />
+
+                    <Button
+                        android:id="@+id/get_verfiy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:text="点击获取"
+                        android:textColor="@color/weakgrey"
+                        android:textSize="28px" />
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@color/weakgrey"
+                    android:padding="10dp"
+                    android:text="注册"
+                    android:textColor="@color/white"
+                    android:textSize="25px" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" >
+
+                    <Button
+                        android:id="@+id/forget_pwd_reg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:text="忘记密码"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="28px" />
+
+                    <Button
+                        android:id="@+id/to_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:text="立即登录"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="28px" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_net" />
+    </FrameLayout>
+
+</LinearLayout>

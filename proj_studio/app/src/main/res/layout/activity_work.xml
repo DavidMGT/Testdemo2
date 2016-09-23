@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegrey"
+    tools:context="com.work.teacher.WorkActivity" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@color/green" >
+
+        <LinearLayout
+            android:id="@+id/selectsub_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/subject_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="初中英语"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_22" />
+
+            <TextView
+                android:id="@+id/version_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人教版"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_22" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/history_work"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/message_top_yes"
+                android:padding="5dp"
+                android:text="历 史"
+                android:textColor="@color/green"
+                android:textSize="@dimen/px_22" />
+
+            <Button
+                android:id="@+id/question_work"
+                android:layout_width="0dp"
+                android:layout_height="28dp"
+                android:layout_weight="1"
+                android:background="@drawable/studey_no"
+                android:padding="5dp"
+                android:text="题 库"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_22" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+             android:layout_gravity="right|center_vertical"
+             android:id="@+id/work_questions_work"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/test_questions" />
+            <TextView 
+                android:id="@+id/work_question_number"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/question_number"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="5dp"
+                />
+        </FrameLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45dp" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpage_work"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:id="@+id/left_menu_work"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/work_left_menu" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/whitegrey"
+                android:layout_gravity="bottom"
+                />
+        </FrameLayout>
+
+        <include layout="@layout/layout_net" />
+    </FrameLayout>
+
+</RelativeLayout>

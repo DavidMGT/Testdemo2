@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegrey" >
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_create_class"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" 
+                android:visibility="gone"
+                >
+
+                <EditText
+                    android:id="@+id/create_name_class"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:hint="请输入班级名称"
+                    android:padding="10dp"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_24" />
+
+                <EditText
+                    android:id="@+id/create_depict_class"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:gravity="top"
+                    android:hint="请输入班级简介"
+                    android:lines="4"
+                    android:padding="10dp"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_24" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="入班审核"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" />
+
+                    <RadioButton
+                        android:id="@+id/create_examine_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:button="@drawable/selector_notice_feedk"
+                        android:checked="true" />
+                </FrameLayout>
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:id="@+id/suess_fail_class"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="40dp"
+                android:visibility="gone"
+                >
+                 <ImageView
+                    android:id="@+id/create_sucess_fail"
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
+                    android:scaleType="fitXY" 
+                    android:src="@drawable/sign_check_icon"
+                    />
+                 <TextView 
+                     android:id="@+id/tv_sucess_fail"
+                     android:text="创建成功!"
+                     android:textColor="@color/blackgrey"
+                     android:textSize="@dimen/px_24"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="30dp"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/layout_net" />
+    </FrameLayout>
+
+</RelativeLayout>

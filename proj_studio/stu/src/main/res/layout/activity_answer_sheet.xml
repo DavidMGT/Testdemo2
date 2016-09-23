@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1"
+    tools:context="com.work.student.homework.AnswerSheetActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y150"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y150"
+                android:gravity="center"
+                android:text="耗时:"
+                android:textColor="#787878"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_cost_time"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y150"
+                android:layout_toRightOf="@id/tv_cost"
+                android:gravity="center"
+                android:text="01:50.01"
+                android:textColor="#787878"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl1"
+            android:padding="@dimen/x15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="答题卡" />
+
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/drawable_circle_gray_bg_strok_gray"
+                android:text="     " />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_toLeftOf="@id/tv_right"
+                android:text="未做" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_toLeftOf="@id/tv2"
+                android:background="@drawable/drawable_circle_gray_bg_strok_green"
+                android:text="     " />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x15"
+                android:layout_toLeftOf="@id/tv3"
+                android:text="已完成 " />
+        </RelativeLayout>
+
+        <com.work.student.view.MyListView
+            android:id="@+id/ll_manswers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl2"
+            android:background="@color/white"
+            android:minHeight="@dimen/y400"></com.work.student.view.MyListView>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

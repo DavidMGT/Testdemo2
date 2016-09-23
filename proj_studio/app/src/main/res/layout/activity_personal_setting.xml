@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegrey"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="头像"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_30" />
+
+                <com.work.teacher.view.AvatarView
+                    android:id="@+id/avatar_personal"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/avatar" >
+                </com.work.teacher.view.AvatarView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="账户ID："
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" />
+
+                    <TextView
+                        android:id="@+id/id_personal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="190"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/whitegrey" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="等级："
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_24" />
+
+                        <TextView
+                            android:id="@+id/grade_num_personal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2级"
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_24" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:orientation="horizontal" 
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        >
+
+                        <SeekBar
+                            android:id="@+id/seekbar_personal"
+                            style="@style/Widget.SeekBar.Normal"
+                            android:layout_width="0dp"
+                            android:layout_height="20px"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="4"
+                            android:max="100"
+                            android:progress="80"
+                            android:thumb="@null" />
+
+                        <TextView
+                            android:id="@+id/grade_personal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="10dp"
+                            android:text="80%"
+                            android:textColor="@color/green" 
+                            android:textSize="@dimen/px_24"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/whitegrey" />
+                <RelativeLayout
+                    android:id="@+id/relative_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/tt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="姓名："
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" 
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/name_personal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="帅气王老师"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" 
+                        android:layout_toRightOf="@id/tt"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/easyicon"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/relative_subandgrade"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/tt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="科目年级："
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" 
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/subject_personal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="初中数学"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" 
+                        android:layout_toRightOf="@id/tt1"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/easyicon"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/whitegrey" />
+                <RelativeLayout
+                    android:id="@+id/relative_subandsch"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/tt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="所属学校："
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" 
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/school_personal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="罗湖一中"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" 
+                        android:layout_toRightOf="@id/tt2"
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/easyicon"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:layout_marginTop="10dp"
+                >
+                <RelativeLayout
+                    android:id="@+id/relative_money"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的钱包"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" 
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/easyicon"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/whitegrey" />
+                <RelativeLayout
+                    android:id="@+id/relative_security"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="账号安全"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" 
+                        android:layout_centerVertical="true"
+                        />
+                    <ImageView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/easyicon"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <Button 
+                android:id="@+id/exit_Login"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="退出当前账号"
+                android:textColor="@color/red"
+                android:textSize="@dimen/px_24"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                />
+        </LinearLayout>
+        <include layout="@layout/layout_net" />
+    </FrameLayout>
+
+</RelativeLayout>

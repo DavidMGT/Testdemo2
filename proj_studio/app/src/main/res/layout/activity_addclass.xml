@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegrey" >
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45dp" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_add_class"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <EditText
+                        android:id="@+id/add_code_class"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:hint="请输入班级编号"
+                        android:padding="10dp"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" />
+
+                    <LinearLayout
+                        android:id="@+id/sousuo_class"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="搜索结果"
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_24" />
+
+                        <TextView
+                            android:id="@+id/code_class"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:text="班级编号：DAFBKDJAF"
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_24" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:background="@color/white"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            android:padding="10dp" >
+
+                            <ImageView
+                                android:id="@+id/sweep_class"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:scaleType="fitXY" />
+
+                            <TextView
+                                android:id="@+id/sweep_code_class"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="加入码：786545"
+                                android:textColor="@color/blackgrey"
+                                android:textSize="@dimen/px_20" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/add_name_class"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:text="班级名称：高三六班"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/px_24" />
+
+                        <TextView
+                            android:id="@+id/add_id_class"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:text="班级    ID：DFHKDSHJ"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/px_24" />
+
+                        <TextView
+                            android:id="@+id/add_date_class"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:background="@color/white"
+                            android:padding="10dp"
+                            android:text="创建时间：2016-02-12"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/px_24" />
+
+                        <TextView
+                            android:id="@+id/add_synopsis_class"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:background="@color/white"
+                            android:lines="4"
+                            android:padding="10dp"
+                            android:text="简介：hd声卡回复的回复肯定是非健康独守空房sadsadsadsadsa"
+                            android:textColor="@color/blackgrey"
+                            android:textSize="@dimen/px_24" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/add_suess_fail_class"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="40dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/add_sucess_fail"
+                        android:layout_width="150dp"
+                        android:layout_height="160dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/sign_check_icon" />
+
+                    <TextView
+                        android:id="@+id/tvadd_sucess_fail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="申请成功!"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" />
+
+                    <TextView
+                        android:id="@+id/tvexamine_sucess_fail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="等待管理员审核!"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/layout_net" />
+    </FrameLayout>
+
+</RelativeLayout>

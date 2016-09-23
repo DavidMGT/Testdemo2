@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitegrey"
+    tools:context="com.work.teacher.WorkActivity" >
+
+    <include layout="@layout/top" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="45dp" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/id_class_manage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="班级    ID：DFHKDSHJ"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_24" />
+
+                <TextView
+                    android:id="@+id/date_class_manage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="创建时间：2016-02-12"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/px_24" />
+
+                <TextView
+                    android:id="@+id/name_class_manage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="高三五班"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_24" />
+
+                <TextView
+                    android:id="@+id/synopsis_class_manage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:text="简介：hd声卡回复的回复肯定是非健康独守空房sadsadsadsadsa"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_24" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="入班审核"
+                        android:textColor="@color/blackgrey"
+                        android:textSize="@dimen/px_24" />
+
+                    <RadioButton
+                        android:id="@+id/examine_class_manage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:button="@drawable/selector_notice_feedk"
+                        android:checked="true" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_class_nomanage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="暂无申请"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_24" 
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"
+                    />
+
+                <com.work.teacher.view.SwipeListView
+                    android:id="@+id/lv_class_manage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:divider="@color/whitegrey"
+                    android:dividerHeight="1dp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/layout_net" />
+    </FrameLayout>
+
+</RelativeLayout>

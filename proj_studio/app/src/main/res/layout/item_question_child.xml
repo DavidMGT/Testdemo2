@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y80"
+    android:background="@color/white"
+    android:padding="@dimen/x10">
+
+    <TextView
+        android:id="@+id/iv_selelct_state"
+        android:layout_width="@dimen/y60"
+        android:layout_height="@dimen/y60"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x20"
+        android:background="@drawable/drawable_circle_whight_bg"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_select_content"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y60"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_toRightOf="@id/iv_selelct_state"
+        android:gravity="center_vertical"
+        android:text="今天下雨" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="%80"
+        android:visibility="invisible" />
+</RelativeLayout>

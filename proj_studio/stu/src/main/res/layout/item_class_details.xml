@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants"
+    >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/contentLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <com.work.student.view.AvatarView
+                    android:id="@+id/avatar_class_details"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/avatar" >
+                </com.work.student.view.AvatarView>
+
+                <TextView
+                    android:id="@+id/tv_class_name_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/avatar_class_details"
+                    android:text="小名"
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_24" />
+
+                <TextView
+                    android:id="@+id/tv_class_subject_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/tv_class_name_details"
+                    android:text=""
+                    android:textColor="@color/blackgrey"
+                    android:textSize="@dimen/px_24" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#FFFF0000"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="删除"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+</LinearLayout>

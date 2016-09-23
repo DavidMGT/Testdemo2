@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:padding="10dp"
+        android:text="收卷"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_28" />
+
+
+    <RadioButton
+        android:id="@+id/rb_rolling_sel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:button="@null"
+        android:checked="true"
+        android:text=" 收卷汇总班成绩并完成作业（默认）"
+        android:textColor="@color/blackgrey" />
+
+    <RadioButton
+        android:id="@+id/rb_rolling_nosel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:button="@null"
+        android:checked="false"
+        android:text=" 收卷待批改作业"
+        android:textColor="@color/blackgrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rolling_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/weakgrey"
+            android:padding="10dp"
+            android:text="取 消"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/rolling_go"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:padding="10dp"
+            android:text="确 认"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

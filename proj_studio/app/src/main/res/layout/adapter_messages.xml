@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y120"
+    android:paddingRight="@dimen/x10"
+    android:paddingTop="@dimen/y10"
+    android:gravity="center_vertical"
+    android:background="@color/whitegrey"
+    android:orientation="vertical">
+
+    <ImageView
+        android:scaleType="center"
+        android:id="@+id/iv_message_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/iv_message_icon"
+        android:id="@+id/ll_messages"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_height="match_parent"
+      >
+        <TextView
+            android:id="@+id/tv_messge_title"
+            android:textColor="@color/black"
+            android:text="这是一个通知"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@id/tv_messge_title"
+            android:id="@+id/tv_message_content"
+            android:textColor="@color/black"
+            android:text="通知詳情请看如下如下如下--------------------------------------------------------------------"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_message_count"
+            android:layout_alignParentTop="true"
+            android:background="@color/red"
+            android:layout_below="@id/tv_messge_title"
+           android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:text="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+</RelativeLayout>

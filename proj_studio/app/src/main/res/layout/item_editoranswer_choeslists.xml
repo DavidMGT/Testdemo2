@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:descendantFocusability="beforeDescendants"
+    >
+
+    <RelativeLayout
+        android:id="@+id/item_left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp" >
+        <TextView
+            android:id="@+id/btn_chose_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" A "
+            android:textColor="@color/green"
+            android:textSize="@dimen/px_22"
+            android:background="@drawable/shape_rating_selbut"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/tv_chose_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:textColor="@color/weakgrey"
+            android:textSize="@dimen/px_22"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:layout_toRightOf="@+id/btn_chose_code"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            />
+        <EditText
+            android:id="@+id/et_chose_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rating_selbut"
+            android:padding="10dp"
+            android:textColor="@color/weakgrey"
+            android:textSize="@dimen/px_22"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:layout_toRightOf="@+id/btn_chose_code"
+            android:layout_marginLeft="10dp"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/iv_chose_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/item_right_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/item_right_top"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/item_right_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

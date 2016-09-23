@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray1">
+
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/text_style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x15"
+        android:text="内容" />
+
+    <EditText
+        android:id="@+id/et_question_title"
+        style="@style/edittext_style1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:hint="请输入" />
+
+    <TextView
+        android:id="@+id/tv_selections"
+        style="@style/text_style1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_question_title"
+        android:padding="@dimen/x15"
+        android:text="选项" />
+
+    <TextView
+        android:id="@+id/tv_add_selections"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/et_question_title"
+        android:padding="@dimen/x15"
+        android:text="添加选项"
+        android:textColor="@color/green" />
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_delete_question"
+            style="@style/text_header_title_style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y96"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:text="删除该题" />
+
+        <Button
+            android:id="@+id/bt_save"
+            style="@style/text_header_title_style"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y96"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:text="继续添加题目" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ll_add_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_bg"
+        android:layout_below="@id/tv_selections"
+        android:background="@color/white"
+        android:padding="@dimen/x10"></ListView>
+
+
+</RelativeLayout>
